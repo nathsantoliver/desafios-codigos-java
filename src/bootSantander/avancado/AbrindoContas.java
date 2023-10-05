@@ -1,5 +1,6 @@
 package bootSantander.avancado;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class AbrindoContas {
@@ -15,9 +16,7 @@ public class AbrindoContas {
         System.out.println("Informacoes:");
 
         // Imprimir as informações da conta usando o objeto criado no TODO acima
-        System.out.println("Conta: " + conta.numero);
-        System.out.println("Titular: " + conta.titular);
-        System.out.println("Saldo: R$ " + conta.saldo);
+        conta.exibirInformacoes();
     }
 }
 
@@ -30,5 +29,12 @@ class ContaBancaria {
         this.numero = numero;
         this.titular = titular;
         this.saldo = saldo;
+    }
+
+    public void exibirInformacoes() {
+        DecimalFormat df = new DecimalFormat("#.0");
+        System.out.println("Conta: " + numero);
+        System.out.println("Titular: " + titular);
+        System.out.println("Saldo: R$ " + df.format(saldo));
     }
 }
