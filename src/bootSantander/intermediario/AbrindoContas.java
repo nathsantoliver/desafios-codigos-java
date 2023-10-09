@@ -1,4 +1,4 @@
-package bootSantander.avancado;
+package bootSantander.intermediario;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;
