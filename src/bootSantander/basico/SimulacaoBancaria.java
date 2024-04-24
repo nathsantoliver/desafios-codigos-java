@@ -12,7 +12,7 @@ public class SimulacaoBancaria {
         while (login) {
             System.out.print("Digite: \n1-Deposito   2-saque\n3-saldo atual   0-sair\n>>");
             int opcao = scan.nextInt();
-            // TODO: Implemente as condições necessárias para avaliaa a opção escolhida:
+            // Implemente as condições necessárias para avaliaa a opção escolhida:
             // Dica: Utilze o switch/case para o programa realizar as operações escolhidas pelo usuário.
             System.out.println();
             switch (opcao) {
@@ -36,11 +36,11 @@ public class SimulacaoBancaria {
                         break;
                     }
                 case 3:
-                    // TODO: Exibe o saldo atual da conta
+                    // Exibe o saldo atual da conta
                     System.out.println("Saldo Atual R$" + saldo);
                     break;
                 case 0:
-                    // TODO: O programa encerra
+                    // O programa encerra
                     System.out.println("Encerrando programa . . .");
                     login = false;
                     break;
