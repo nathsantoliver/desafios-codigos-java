@@ -28,7 +28,7 @@ public class ControleSimplesDeSaques {
         Scanner scanner = new Scanner(System.in);
 
         double limiteDiario = scanner.nextDouble();
-        double valorSaque = 0d;
+        double valorSaque;
 
         // Crie um loop 'for' para iterar sobre os saques:
         for (double i = limiteDiario; i > 0; i -= valorSaque ) {
@@ -51,6 +51,7 @@ public class ControleSimplesDeSaques {
 
             } else if (valorSaque > limiteDiario) {
                 System.out.println("Limite diario de saque atingido.");
+                System.out.println("Transacoes encerradas.");
                 break;
             }
         }
