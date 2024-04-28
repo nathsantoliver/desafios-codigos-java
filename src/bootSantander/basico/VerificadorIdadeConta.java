@@ -21,8 +21,3 @@ public class VerificadorIdadeConta {
         scanner.close();
     }
 }
-
-/**
- * Voce esta elegivel para criar uma conta bancaria.
- * Voce nao esta elegivel para criar uma conta bancaria.
- */
