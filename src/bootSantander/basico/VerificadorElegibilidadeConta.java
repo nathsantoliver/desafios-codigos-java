@@ -2,7 +2,7 @@ package bootSantander.basico;
 
 import java.util.Scanner;
 
-public class VerificadorIdadeConta {
+public class VerificadorElegibilidadeConta {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
