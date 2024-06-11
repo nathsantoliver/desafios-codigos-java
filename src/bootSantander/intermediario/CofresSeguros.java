@@ -8,7 +8,7 @@ public class CofresSeguros {
         Scanner scanner = new Scanner(System.in);
         String tipoCofre = scanner.nextLine();
 
-        // TODO: Implemente a condição necessário para a verificação dos cofres seguros:
+        // Implemente a condição necessário para a verificação dos cofres seguros:
         if (tipoCofre.equalsIgnoreCase("digital")) {
             int senha = scanner.nextInt();
             CofreDigital cofreDigital = new CofreDigital(senha);
@@ -42,7 +42,7 @@ abstract class Cofre {
 }
 
 class CofreDigital extends Cofre {
-    private int senha;
+    private final int senha;
 
     public CofreDigital(int senha) {
         super("Cofre Digital", "Senha");
