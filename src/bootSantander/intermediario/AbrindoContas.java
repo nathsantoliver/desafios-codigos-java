@@ -12,7 +12,7 @@ public class AbrindoContas {
         double saldo = scan.nextDouble();
 
         // Criar uma instância de "ContaBancaria" com os valores de Entrada.
-        ContaBancaria conta = new ContaBancaria(numeroConta, nomeTitular, saldo);
+        ContaBancaria1 conta = new ContaBancaria1(numeroConta, nomeTitular, saldo);
         System.out.println("Informacoes:");
 
         // Imprimir as informações da conta usando o objeto criado no TODO acima
@@ -20,12 +20,12 @@ public class AbrindoContas {
     }
 }
 
-class ContaBancaria {
+class ContaBancaria1 {
     int numero;
     String titular;
     double saldo;
 
-    public ContaBancaria(int numero, String titular, double saldo) {
+    public ContaBancaria1(int numero, String titular, double saldo) {
         this.numero = numero;
         this.titular = titular;
         this.saldo = saldo;
