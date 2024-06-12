@@ -8,7 +8,7 @@ public class MainContaBancaria {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // TODO: Criar uma nova conta bancária com o saldo inicial
+        // Criar uma nova conta bancária com o saldo inicial
         double saldoInicial = scanner.nextDouble();
         ContaBancaria conta = new ContaBancaria(saldoInicial);
 
@@ -33,14 +33,14 @@ class ContaBancaria {
     }
 
     public void depositar(double valor) {
-        // TODO: Incrementar o saldo com o valor e imprimir "Deposito feito."
+        // Incrementar o saldo com o valor e imprimir "Deposito feito."
         saldo = saldo + valor;
         System.out.println("Depósito feito.");
         imprimirSaldo();
     }
 
     public void sacar(double valor) {
-        // TODO: Verificar se o saldo é suficiente considerando o valor:
+        // Verificar se o saldo é suficiente considerando o valor:
         if (saldo >= valor) {
             saldo = saldo - valor;
             // Se sim, atualizar o saldo e imprimir "Saque feito."
