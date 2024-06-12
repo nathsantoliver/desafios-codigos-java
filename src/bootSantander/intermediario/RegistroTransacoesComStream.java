@@ -2,8 +2,6 @@ package bootSantander.intermediario;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import java.util.stream.Stream;
-
 public class RegistroTransacoesComStream {
 
     public static void main(String[] args) {
@@ -31,25 +29,24 @@ public class RegistroTransacoesComStream {
         }
 
         // Exibe o saldo final e a lista de transações ao final do processo usando Stream API
-        System.out.println("Saldo: " + saldo);
-        System.out.println("Transacoes:");
-
         // Crie um fluxo (stream) a partir da lista de transações:
         // Mapeie cada transação para uma string formatada:
         // Colete os elementos do fluxo em uma lista:
         // Para cada elemento da lista, imprime no console:
-        Stream<Transacao> stream = transacoes.stream();
-        stream.forEach(
-                transacao -> System.out.println(transacao.getTipo() + " de " + transacao.getValor())
-        );
+        System.out.println("Saldo : " + saldo);
+        System.out.println("Transacoes:");
+        List<String> formataTransacoes = transacoes.stream()
+                .map(transacao -> String.format("%c de %.1f", transacao.getTipo(), transacao.getValor()))
+                .toList();
+        formataTransacoes.forEach(System.out::println);
 
         scanner.close();
     }
 }
 
 class Transacao {
-    private char tipo;
-    private double valor;
+    private final char tipo;
+    private final double valor;
 
     public Transacao(char tipo, double valor) {
         this.tipo = tipo;
