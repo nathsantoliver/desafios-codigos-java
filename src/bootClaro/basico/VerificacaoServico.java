@@ -17,7 +17,7 @@ public class VerificacaoServico {
         String nomeCliente = partes[0];
         boolean contratado = false;
 
-        // TODO: Verifique se o serviço está na lista de serviços contratados
+        // Verifique se o serviço está na lista de serviços contratados
         for (String parte : partes) {
             if (servico.matches(parte)) {
                 contratado = true;
