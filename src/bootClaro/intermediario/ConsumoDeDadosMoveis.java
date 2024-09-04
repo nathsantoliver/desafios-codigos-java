@@ -1,4 +1,4 @@
-package bootClaro.basico;
+package bootClaro.intermediario;
 
 import java.util.Scanner;
 
