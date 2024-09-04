@@ -30,7 +30,7 @@ public class ConsumoDeDadosMoveis {
         // Função para identificar a semana de maior consumo
         for (int i = 0; i < consumoSemanal.length; i++) {
             int consumo = Integer.parseInt(consumoSemanal[i].trim());
-            // TODO: Faça o cálculo para identificar a semana de maior consumo
+            // Faça o cálculo para identificar a semana de maior consumo
             if (consumo > maiorConsumo) {
                 maiorConsumo = consumo;
                 semanaDeMaiorConsumo = i + 1;
