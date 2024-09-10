@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class EndpointValidator {
     public static String validateEndpoint(String endpoint) {
         // Verifique se o endpoint fornecido segue o formato padrão de endpoint de API:
-        if (endpoint.matches("^/api/\\w+(/\\w+)*$")) {
+        String regex = "^/api/\\w+(/\\w+)*$";
+        if (endpoint.matches(regex)) {
             return "Endpoint valido.";
         } else {
             return "Endpoint invalido.";
