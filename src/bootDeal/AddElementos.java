@@ -4,10 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class Table {
+public class AddElementos {
     private Map<Integer, String> table;
 
-    public Table() {
+    public AddElementos() {
         this.table = new HashMap<>();
     }
 
@@ -24,7 +24,7 @@ public class Table {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Table table = new Table();
+        AddElementos table = new AddElementos();
 
         int n = scanner.nextInt();
         scanner.nextLine();
