@@ -12,7 +12,7 @@ public class Table {
     }
 
     // Implemente o metodo insert para adicionar elementos à tabela:
-    private void insert(int id, String name) {
+    public void insert(int id, String name) {
         table.put(id, name);
     }
 
