@@ -22,7 +22,7 @@ public class AttElementos {
         table.put(key, value);
     }
 
-    // TODO: Implementar o metodo update:
+    // Implementar o metodo update:
     // DICA: O metodo update deve verificar se a chave (key) existe na tabela.
     // Se existir, atualize o valor associado a essa chave com newValue.
     // Caso contrário, exiba a mensagem "ID nao encontrado.".
