@@ -1,4 +1,4 @@
-package bootDeal.intermediario;
+package bootDeal;
 
 import java.util.ArrayList;
 import java.util.List;
