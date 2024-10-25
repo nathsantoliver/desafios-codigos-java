@@ -19,7 +19,7 @@ public class GerenciadorEstoque {
     }
 
     public static String consultarProduto(String nomeProduto) {
-        // TODO: Verifique se o produto está no estoque:
+        // Verifique se o produto está no estoque:
         boolean temProduto = produtosEstoque.containsKey(nomeProduto);
         // 1. Cheque se o produto está presente no HashMap 'produtosEstoque'.
         if(temProduto) {
