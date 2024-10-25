@@ -1,6 +1,7 @@
 package bootDeal;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
@@ -31,8 +32,8 @@ public class FiltroProdutos {
 
         // TODO: Filtre os produtos pela faixa de preco usando Streams:
         List<Produto> produtosFiltrados = produtos.stream()
-                .filter(p -> p.preco >= precoMin && p.preco <= precoMax)
-                .collect(Collectors.toList());
+                                            .filter(p -> p.preco >= precoMin && p.preco <= precoMax)
+                                            .collect(Collectors.toList());  /* could be just .toList() */
 
         for (Produto p : produtosFiltrados) {
             System.out.printf("Nome: %s - Preco: %.2f\n", p.nome, p.preco);
