@@ -35,11 +35,13 @@ public class RemoverDuplicados {
         }
 
         // TODO: Chamar a função removerDuplicados e armazenar o resultado:
-
+        List<String> produtosUnicos = removerDuplicados(produtos);
 
         System.out.println("Produtos unicos:");
         // TODO: Implemente o loop for para imprimir cada produto na lista produtosUnicos:
-
+        for(String p : produtosUnicos) {
+            System.out.println(p);
+        }
 
         scanner.close();
     }
